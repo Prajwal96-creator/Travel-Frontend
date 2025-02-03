@@ -1,0 +1,36 @@
+.feature-card {
+  background: white;
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%; /* Ensure the card takes full width within its container */
+  max-width: 350px; /* Limit the card width */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9fa;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .feature-card {
+    max-width: 300px; /* Adjust card width for medium screens */
+    padding: 20px; /* Reduce padding for smaller screens */
+    margin: 20px auto; /* Center the cards on the screen */
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-card {
+    max-width: 100%; /* Make cards take up full width on small screens */
+    padding: 15px; /* Reduce padding further on very small screens */
+    margin: 15px auto; /* Add margin between cards */
+  }
+}

@@ -1,0 +1,94 @@
+/* Register Container */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+    background-image: url("https://img.freepik.com/free-vector/geometric-gradient-futuristic-background_23-2149116406.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 20px; */
+  }
+  
+  /* Register Card */
+  .register-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 200px;
+    text-decoration: underline;
+  }
+  
+  /* Form Label */
+  .form-label {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  /* Primary Button */
+  .btn-primary {
+    background-color: #ff4081;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e60073;
+    transform: scale(1.05);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .register-container {
+      height: 100vh; /* Adjust container height for smaller screens */
+      padding: 0 5%; /* Add padding to prevent content from touching edges */
+    }
+  
+    .register-card {
+      padding: 20px; /* Reduce padding inside the card */
+      max-width: 500px; /* Decrease card width for smaller screens */
+    }
+  
+    .section-title {
+      font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+  
+    .btn-primary {
+      padding: 10px; /* Reduce button padding */
+      font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .register-container {
+      height: 90vh; /* Further adjust container height for mobile */
+      padding: 0 3%; /* Reduce padding for very small screens */
+    }
+  
+    .register-card {
+      padding: 15px; /* Further reduce padding inside the card */
+      max-width: 90%; /* Make the card take most of the screen width */
+    }
+  
+    .section-title {
+      font-size: 1rem; /* Further adjust font size for mobile */
+    }
+  
+    .btn-primary {
+      padding: 8px; /* Adjust button padding for mobile */
+      font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+  }
+  

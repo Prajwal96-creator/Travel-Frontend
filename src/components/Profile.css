@@ -1,0 +1,108 @@
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://wallpapers.com/images/high/profile-background-bddar8tgx7ymbl1m.webp') no-repeat center center;
+    background-size: cover;
+}
+
+/* Profile Card */
+.profile-card {
+    background: rgba(255, 255, 255, 0.8); /* Added transparency to the card for better readability */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+/* Strong Text */
+strong {
+    color: #444;
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #ff4081;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e60073;
+    transform: scale(1.05);
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-header {
+    background: #ff4081;
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-title {
+    font-size: 1.4rem;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 0 5%; /* Reduce padding for smaller screens */
+    }
+
+    .profile-card {
+        padding: 20px; /* Reduce padding inside card */
+        max-width: 400px; /* Adjust max width for smaller screens */
+    }
+
+    .section-title {
+        font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+
+    .btn-primary {
+        padding: 10px; /* Adjust button padding */
+        font-size: 1rem; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 0 3%; /* Further reduce padding for mobile */
+    }
+
+    .profile-card {
+        padding: 15px; /* Further reduce padding inside card */
+        max-width: 90%; /* Ensure the card takes up most of the screen */
+    }
+
+    .section-title {
+        font-size: 1rem; /* Adjust font size for small screens */
+    }
+
+    .btn-primary {
+        padding: 8px; /* Adjust button padding for small screens */
+        font-size: 0.9rem; /* Reduce button font size for mobile */
+    }
+}

@@ -1,0 +1,87 @@
+/* Navbar Base Styles */
+.navbar {
+    background: black !important;
+    /* padding: 20px 30px; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white !important;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    color: #f8f9fa !important;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 12px 18px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        background: black !important;
+        padding: 12px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Ensure the navbar takes up full width */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0; /* Adjust margin for mobile */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 15px; /* Reduce padding for mobile devices */
+    }
+
+    .navbar-toggler {
+        display: block; /* Ensure the toggle button is displayed on smaller screens */
+    }
+}
+
+/* Media Queries for Small Screens (Mobile Devices) */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.8rem; /* Adjust brand size for smaller screens */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        padding: 8px 12px; /* Further reduce padding for mobile screens */
+    }
+
+    .navbar-nav {
+        padding: 10px; /* Reduce padding for better mobile experience */
+    }
+}
