@@ -38,9 +38,10 @@ const TripDetails = () => {
     const postData = { flightDetails: formData };
 
     try {
-      const response = await axios.post("http://localhost:5000/api/trips/", postData, {
+      const response = await axios.post(`https://travel-backend-pzzf.onrender.com/api/trips/`, postData, {
         headers: { Authorization: `Bearer ${token}` },
       });
+      console.log(process.env.BACKEND_URL)
 
       toast.success(`Flight ${formData.flightNumber} added successfully!`);
 

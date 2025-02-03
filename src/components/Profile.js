@@ -17,7 +17,7 @@ const ProfilePage = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/students/profile", {
+        const response = await axios.get(`https://travel-backend-pzzf.onrender.com/api/students/profile`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUser(response.data);
@@ -55,7 +55,7 @@ const ProfilePage = () => {
       // Create a copy of editedUser without the email field
       const { email, ...updatedData } = editedUser;
   
-      const response = await axios.put("http://localhost:5000/api/students/profile", updatedData, {
+      const response = await axios.put(`https://travel-backend-pzzf.onrender.com/api/students/profile`, updatedData, {
         headers: { Authorization: `Bearer ${token}` },
       });
   

@@ -38,7 +38,7 @@ const MyTrips = () => {
       return;
     }
     try {
-      const response = await axios.get("http://localhost:5000/api/trips/", {
+      const response = await axios.get(`https://travel-backend-pzzf.onrender.com/api/trips/`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTrips(response.data);
@@ -65,7 +65,7 @@ const MyTrips = () => {
   const fetchTripById = async (tripId, isEditMode = false) => {
     const token = localStorage.getItem("token");
     try {
-      const response = await axios.get(`http://localhost:5000/api/trips/${tripId}`, {
+      const response = await axios.get(`https://travel-backend-pzzf.onrender.com/api/trips/${tripId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       
@@ -99,7 +99,7 @@ const MyTrips = () => {
   const updateTripById = async (tripId) => {
     const token = localStorage.getItem("token");
     try {
-      await axios.put(`http://localhost:5000/api/trips/${tripId}`, 
+      await axios.put(`https://travel-backend-pzzf.onrender.com/api/trips/${tripId}`, 
         { flightDetails: formData },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -116,7 +116,7 @@ const MyTrips = () => {
   const deleteTripById = async (tripId) => {
     const token = localStorage.getItem("token");
     try {
-      await axios.delete(`http://localhost:5000/api/trips/${tripId}`, {
+      await axios.delete(`https://travel-backend-pzzf.onrender.com/api/trips/${tripId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       

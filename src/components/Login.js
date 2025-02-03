@@ -18,7 +18,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/login", formData);
+      const response = await axios.post(`https://travel-backend-pzzf.onrender.com/api/auth/login`, formData);
       const { token, student } = response.data;
 
       // Store token in localStorage
